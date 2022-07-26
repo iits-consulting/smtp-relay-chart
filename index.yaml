@@ -1,0 +1,12 @@
+apiVersion: v1
+entries:
+  smtp-relay:
+  - apiVersion: v2
+    created: "2022-07-26T11:28:25.071462513Z"
+    description: smtp-relay
+    digest: a68b40d3d841db1fe183e16cd071386b23b010331d08764b8544478216960de3
+    name: smtp-relay
+    urls:
+    - https://github.com/iits-consulting/smtp-relay-chart/releases/download/smtp-relay-1.0.0/smtp-relay-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-07-26T11:28:25.071467013Z"
