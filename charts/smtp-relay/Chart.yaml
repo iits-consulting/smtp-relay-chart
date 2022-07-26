@@ -1,0 +1,4 @@
+apiVersion: v2
+description: smtp-relay
+name: smtp-relay
+version: 1.0.0

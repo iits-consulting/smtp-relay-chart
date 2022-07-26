@@ -1,0 +1,15 @@
+# Based on: https://github.com/juanluisbaptiste/docker-postfix
+replicaCount: 2
+image:
+  repository: juanluisbaptiste/postfix
+  tag: latest
+service:
+  port: 25
+intranetAccess: false
+env:
+  SERVER_HOSTNAME: myservername.com
+  SMTP_SERVER: mailauth.myservername.com
+  SMTP_PORT: 25
+  SMTP_USERNAME: ""
+  SMTP_PASSWORD: ""
+  DEBUG: no
