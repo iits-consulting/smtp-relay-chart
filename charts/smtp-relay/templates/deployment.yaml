@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Chart.Name }}
+  name: {{ .Release.Name }}
 spec:
   selector:
     matchLabels:
-      app: {{ .Chart.Name }}
-      release: {{ .Chart.Name }}
+      app: {{ .Release.Name }}
+      release: {{ .Release.Name }}
   replicas: {{ .Values.replicaCount }}
   template:
     metadata:
@@ -15,8 +15,8 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        app: {{ .Chart.Name }}
-        release: {{ .Chart.Name }}
+        app: {{ .Release.Name }}
+        release: {{ .Release.Name }}
     spec:
       {{- if .Values.intranetAccess}}
       hostNetwork: true
